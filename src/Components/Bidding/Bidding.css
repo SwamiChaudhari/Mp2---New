@@ -1,0 +1,113 @@
+/* 🌟 General Styling */
+.bidding-container {
+  text-align: center;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔥 Title */
+.bidding-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* 📌 Dropdown */
+.bidding-dropdown {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background: white;
+  margin-bottom: 15px;
+}
+
+/* 🎯 Bid Input Section */
+.bidding-input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.bid-input {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.bid-button {
+  background: #ffcc00;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bid-button:hover {
+  background: #ff9900;
+  transform: scale(1.1);
+}
+
+/* 🖼️ Bidding Cards */
+.bidding-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bidding-card {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.bidding-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼️ Image */
+.bidding-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .bidding-container {
+      padding: 20px;
+  }
+
+  .bidding-input-section {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .bid-input {
+      width: 100%;
+  }
+
+  .bidding-card {
+      width: 100%;
+  }
+}

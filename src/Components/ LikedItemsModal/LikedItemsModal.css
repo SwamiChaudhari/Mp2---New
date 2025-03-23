@@ -1,0 +1,40 @@
+.liked-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .liked-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .liked-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .liked-container li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .liked-container button {
+    margin-top: 10px;
+    padding: 8px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

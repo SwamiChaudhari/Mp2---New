@@ -77,11 +77,12 @@ const Navbar = () => {
                   CONTACT
                 </Link>
               </li>
+              <Link to="/bidding">Bidding</Link>
             </ul>
           </div>
         </div>
         <div className="iconContainer">
-          <FiSearch size={22} onClick={scrollToTop} />
+          
           <Link to="/loginSignUp" onClick={scrollToTop}>
             <FaRegUser size={22} />
           </Link>
@@ -97,7 +98,7 @@ const Navbar = () => {
               <RiShoppingBagLine size={22} />
             </Badge>
           </Link>
-          <FiHeart size={22} onClick={scrollToTop} />
+          {/* <FiHeart size={22} onClick={scrollToTop} /> */}
           {/* <RiMenu2Line size={22} /> */}
         </div>
       </nav>
