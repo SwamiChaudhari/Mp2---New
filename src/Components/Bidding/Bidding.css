@@ -4,7 +4,7 @@
   padding: 40px;
   max-width: 800px;
   margin: auto;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  background: linear-gradient(135deg, #555555, #fad0c4);
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -69,7 +69,7 @@
 }
 
 .bidding-card {
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: linear-gradient(to right, #3f5d6d, #4b8af8);
   color: white;
   padding: 20px;
   border-radius: 10px;
