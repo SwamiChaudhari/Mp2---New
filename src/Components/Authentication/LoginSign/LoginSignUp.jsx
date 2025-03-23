@@ -1,12 +1,30 @@
 import React, { useState } from "react";
 import "./LoginSignUp.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LoginSignUp = () => {
   const [activeTab, setActiveTab] = useState("tabButton1");
+  const [userType, setUserType] = useState(""); // State for user role
+  const navigate = useNavigate();
 
   const handleTab = (tab) => {
     setActiveTab(tab);
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    localStorage.setItem("userRole", userType); // Store role in localStorage
+    if (userType === "Farmer") navigate("/farmer-dashboard");
+    else if (userType === "Customer") navigate("/customer-dashboard");
+    else if (userType === "Retailer") navigate("/retailer-dashboard");
+  };
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    localStorage.setItem("userRole", userType); // Store role in localStorage
+    if (userType === "Farmer") navigate("/farmer-dashboard");
+    else if (userType === "Customer") navigate("/customer-dashboard");
+    else if (userType === "Retailer") navigate("/retailer-dashboard");
   };
 
   return (
@@ -28,13 +46,28 @@ const LoginSignUp = () => {
             </p>
           </div>
           <div className="loginSignUpTabsContent">
-            {/* tab1 */}
-
+            {/* Login Tab */}
             {activeTab === "tabButton1" && (
               <div className="loginSignUpTabsContentLogin">
-                <form>
+                <form onSubmit={handleLogin}>
                   <input type="email" placeholder="Email address *" required />
                   <input type="password" placeholder="Password *" required />
+                  <div className="loginSignUpDropdown">
+                    <label htmlFor="userType">User Type *</label>
+                    <select
+                      id="userType"
+                      name="userType"
+                      required
+                      onChange={(e) => setUserType(e.target.value)}
+                    >
+                      <option value="" disabled selected>
+                        Select User Type
+                      </option>
+                      <option value="Farmer">Farmer</option>
+                      <option value="Customer">Customer</option>
+                      <option value="Retailer">Retailer</option>
+                    </select>
+                  </div>
                   <div className="loginSignUpForgetPass">
                     <label>
                       <input type="checkbox" className="brandRadio" />
@@ -44,7 +77,7 @@ const LoginSignUp = () => {
                       <Link to="/resetPassword">Lost password?</Link>
                     </p>
                   </div>
-                  <button>Log In</button>
+                  <button type="submit">Log In</button>
                 </form>
                 <div className="loginSignUpTabsContentLoginText">
                   <p>
@@ -57,14 +90,29 @@ const LoginSignUp = () => {
               </div>
             )}
 
-            {/* Tab2 */}
-
+            {/* Register Tab */}
             {activeTab === "tabButton2" && (
               <div className="loginSignUpTabsContentRegister">
-                <form>
+                <form onSubmit={handleRegister}>
                   <input type="text" placeholder="Username *" required />
                   <input type="email" placeholder="Email address *" required />
                   <input type="password" placeholder="Password *" required />
+                  <div className="loginSignUpDropdown">
+                    <label htmlFor="userType">User Type *</label>
+                    <select
+                      id="userType"
+                      name="userType"
+                      required
+                      onChange={(e) => setUserType(e.target.value)}
+                    >
+                      <option value="" disabled selected>
+                        Select User Type
+                      </option>
+                      <option value="Farmer">Farmer</option>
+                      <option value="Customer">Customer</option>
+                      <option value="Retailer">Retailer</option>
+                    </select>
+                  </div>
                   <p>
                     Your personal data will be used to support your experience
                     throughout this website, to manage access to your account,
@@ -78,7 +126,7 @@ const LoginSignUp = () => {
                     </Link>
                     .
                   </p>
-                  <button>Register</button>
+                  <button type="submit">Register</button>
                 </form>
               </div>
             )}

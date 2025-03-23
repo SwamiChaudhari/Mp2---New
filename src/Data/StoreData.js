@@ -116,6 +116,52 @@ let StoreData = [
     productReviews: "4.8 (125+ reviews)",
     productCategory: "Fruits",
   },
+  {
+    productID: 14,
+    frontImg: "https://i.pinimg.com/736x/7e/c6/b1/7ec6b1bf0714aed622b225c755b7cbc7.jpg", // Avocado
+    backImg: "https://i.pinimg.com/736x/7e/c6/b1/7ec6b1bf0714aed622b225c755b7cbc7.jpg",
+    productName: "Acantaloupes",
+    productPrice: 50,
+    productReviews: "4.8 (125+ reviews)",
+    productCategory: "Fruits",
+  },
+  {
+    productID: 15,
+    frontImg: "https://i.pinimg.com/736x/7e/c6/b1/7ec6b1bf0714aed622b225c755b7cbc7.jpg", // Avocado
+    backImg: "https://i.pinimg.com/736x/7e/c6/b1/7ec6b1bf0714aed622b225c755b7cbc7.jpg",
+    productName: "Acantaloupes",
+    productPrice: 50,
+    productReviews: "4.8 (125+ reviews)",
+    productCategory: "Fruits",
+  },
+  {
+    productID: 16,
+    frontImg: "https://i.pinimg.com/736x/7e/c6/b1/7ec6b1bf0714aed622b225c755b7cbc7.jpg", // Avocado
+    backImg: "https://i.pinimg.com/736x/7e/c6/b1/7ec6b1bf0714aed622b225c755b7cbc7.jpg",
+    productName: "Acantaloupes",
+    productPrice: 50,
+    productReviews: "4.8 (125+ reviews)",
+    productCategory: "Fruits",
+  },
+  {
+    productID: 17,
+    frontImg: "https://i.pinimg.com/736x/7e/c6/b1/7ec6b1bf0714aed622b225c755b7cbc7.jpg", // Avocado
+    backImg: "https://i.pinimg.com/736x/7e/c6/b1/7ec6b1bf0714aed622b225c755b7cbc7.jpg",
+    productName: "Acantaloupes",
+    productPrice: 50,
+    productReviews: "4.8 (125+ reviews)",
+    productCategory: "Fruits",
+  },
+  {
+    productID: 18,
+    frontImg: "https://i.pinimg.com/736x/7e/c6/b1/7ec6b1bf0714aed622b225c755b7cbc7.jpg", // Avocado
+    backImg: "https://i.pinimg.com/736x/7e/c6/b1/7ec6b1bf0714aed622b225c755b7cbc7.jpg",
+    productName: "Acantaloupes",
+    productPrice: 50,
+    productReviews: "4.8 (125+ reviews)",
+    productCategory: "Fruits",
+  },
+  
   
 ];
 
